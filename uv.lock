@@ -4,8 +4,8 @@ requires-python = ">=3.14"
 
 [manifest]
 members = [
-    "navitia-client",
     "ratp-mcp",
+    "ratp-route-calc-api",
 ]
 
 [[package]]
@@ -292,23 +292,6 @@ wheels = [
 ]
 
 [[package]]
-name = "navitia-client"
-version = "1.0.1"
-source = { editable = "ratp-api" }
-dependencies = [
-    { name = "attrs" },
-    { name = "httpx" },
-    { name = "python-dateutil" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "attrs", specifier = ">=22.2.0" },
-    { name = "httpx", specifier = ">=0.23.0,<0.29.0" },
-    { name = "python-dateutil", specifier = ">=2.8.0,<3" },
-]
-
-[[package]]
 name = "pycparser"
 version = "3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -455,14 +438,31 @@ source = { virtual = "." }
 dependencies = [
     { name = "httpx" },
     { name = "mcp", extra = ["cli"] },
-    { name = "navitia-client" },
+    { name = "ratp-route-calc-api" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "mcp", extras = ["cli"], specifier = ">=1.26.0" },
-    { name = "navitia-client", editable = "ratp-api" },
+    { name = "ratp-route-calc-api", editable = "ratp-route-calc-api" },
+]
+
+[[package]]
+name = "ratp-route-calc-api"
+version = "1.0.1"
+source = { editable = "ratp-route-calc-api" }
+dependencies = [
+    { name = "attrs" },
+    { name = "httpx" },
+    { name = "python-dateutil" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "attrs", specifier = ">=22.2.0" },
+    { name = "httpx", specifier = ">=0.23.0,<0.29.0" },
+    { name = "python-dateutil", specifier = ">=2.8.0,<3" },
 ]
 
 [[package]]

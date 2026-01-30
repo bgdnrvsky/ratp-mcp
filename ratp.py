@@ -5,9 +5,9 @@ import pkgutil
 from functools import wraps
 from types import FunctionType
 
-import navitia_client.api.default as apis
+import ratp_route_calc.api.default as apis
 from mcp.server.fastmcp import FastMCP
-from navitia_client.client import AuthenticatedClient
+from ratp_route_calc.client import AuthenticatedClient
 
 mcp = FastMCP("ratp")
 
@@ -17,7 +17,6 @@ client = AuthenticatedClient(
     auth_header_name="apikey",
     prefix="",
 )
-
 
 for submodule in pkgutil.iter_modules(apis.__path__):
     imported = importlib.import_module(apis.__name__ + "." + submodule.name)
