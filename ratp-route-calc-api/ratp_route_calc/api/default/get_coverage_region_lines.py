@@ -130,7 +130,8 @@ def sync_detailed(
     tags: list[str] | Unset = UNSET,
     original_id: str | Unset = UNSET,
 ) -> Response[LinesResponse]:
-    """
+    """Get all transport lines info
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
@@ -206,7 +207,8 @@ def sync(
     tags: list[str] | Unset = UNSET,
     original_id: str | Unset = UNSET,
 ) -> LinesResponse | None:
-    """
+    """Get all transport lines info
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
@@ -277,7 +279,8 @@ async def asyncio_detailed(
     tags: list[str] | Unset = UNSET,
     original_id: str | Unset = UNSET,
 ) -> Response[LinesResponse]:
-    """
+    """Get all transport lines info
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
@@ -351,7 +354,8 @@ async def asyncio(
     tags: list[str] | Unset = UNSET,
     original_id: str | Unset = UNSET,
 ) -> LinesResponse | None:
-    """
+    """Get all transport lines info
+
     Args:
         start_page (int | Unset):
         count (int | Unset):

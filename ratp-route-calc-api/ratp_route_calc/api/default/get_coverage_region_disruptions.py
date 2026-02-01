@@ -134,7 +134,8 @@ def sync_detailed(
     original_id: str | Unset = UNSET,
     language: str | Unset = UNSET,
 ) -> Response[DisruptionsResponse]:
-    """
+    """Get disruptions info
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
@@ -213,7 +214,8 @@ def sync(
     original_id: str | Unset = UNSET,
     language: str | Unset = UNSET,
 ) -> DisruptionsResponse | None:
-    """
+    """Get disruptions info
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
@@ -287,7 +289,8 @@ async def asyncio_detailed(
     original_id: str | Unset = UNSET,
     language: str | Unset = UNSET,
 ) -> Response[DisruptionsResponse]:
-    """
+    """Get disruptions info
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
@@ -364,7 +367,8 @@ async def asyncio(
     original_id: str | Unset = UNSET,
     language: str | Unset = UNSET,
 ) -> DisruptionsResponse | None:
-    """
+    """Get disruptions info
+
     Args:
         start_page (int | Unset):
         count (int | Unset):

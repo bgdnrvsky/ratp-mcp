@@ -94,7 +94,8 @@ def sync_detailed(
     from_: str | Unset = UNSET,
     shape: str | Unset = UNSET,
 ) -> Response[GetCoverageRegionPlacesResponse200]:
-    """
+    """Get information about a given place
+
     Args:
         q (str):
         type_ (list[str] | Unset):
@@ -143,7 +144,8 @@ def sync(
     from_: str | Unset = UNSET,
     shape: str | Unset = UNSET,
 ) -> GetCoverageRegionPlacesResponse200 | None:
-    """
+    """Get information about a given place
+
     Args:
         q (str):
         type_ (list[str] | Unset):
@@ -187,7 +189,8 @@ async def asyncio_detailed(
     from_: str | Unset = UNSET,
     shape: str | Unset = UNSET,
 ) -> Response[GetCoverageRegionPlacesResponse200]:
-    """
+    """Get information about a given place
+
     Args:
         q (str):
         type_ (list[str] | Unset):
@@ -234,7 +237,8 @@ async def asyncio(
     from_: str | Unset = UNSET,
     shape: str | Unset = UNSET,
 ) -> GetCoverageRegionPlacesResponse200 | None:
-    """
+    """Get information about a given place
+
     Args:
         q (str):
         type_ (list[str] | Unset):

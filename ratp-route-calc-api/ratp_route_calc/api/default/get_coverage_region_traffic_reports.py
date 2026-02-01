@@ -102,7 +102,8 @@ def sync_detailed(
     tags: list[str] | Unset = UNSET,
     language: str | Unset = UNSET,
 ) -> Response[GetCoverageRegionTrafficReportsResponse200]:
-    """
+    """Get traffic reports
+
     Args:
         depth (int | Unset):
         count (int | Unset):
@@ -154,7 +155,8 @@ def sync(
     tags: list[str] | Unset = UNSET,
     language: str | Unset = UNSET,
 ) -> GetCoverageRegionTrafficReportsResponse200 | None:
-    """
+    """Get traffic reports
+
     Args:
         depth (int | Unset):
         count (int | Unset):
@@ -201,7 +203,8 @@ async def asyncio_detailed(
     tags: list[str] | Unset = UNSET,
     language: str | Unset = UNSET,
 ) -> Response[GetCoverageRegionTrafficReportsResponse200]:
-    """
+    """Get traffic reports
+
     Args:
         depth (int | Unset):
         count (int | Unset):
@@ -251,7 +254,8 @@ async def asyncio(
     tags: list[str] | Unset = UNSET,
     language: str | Unset = UNSET,
 ) -> GetCoverageRegionTrafficReportsResponse200 | None:
-    """
+    """Get traffic reports
+
     Args:
         depth (int | Unset):
         count (int | Unset):

@@ -126,7 +126,8 @@ def sync_detailed(
     items_per_schedule: int | Unset = UNSET,
     disable_geojson: bool | Unset = UNSET,
 ) -> Response[GetCoverageRegionDeparturesResponse200]:
-    """
+    """Get departures for a given object
+
     Args:
         filter_ (str | Unset):
         from_datetime (str | Unset):
@@ -199,7 +200,8 @@ def sync(
     items_per_schedule: int | Unset = UNSET,
     disable_geojson: bool | Unset = UNSET,
 ) -> GetCoverageRegionDeparturesResponse200 | None:
-    """
+    """Get departures for a given object
+
     Args:
         filter_ (str | Unset):
         from_datetime (str | Unset):
@@ -267,7 +269,8 @@ async def asyncio_detailed(
     items_per_schedule: int | Unset = UNSET,
     disable_geojson: bool | Unset = UNSET,
 ) -> Response[GetCoverageRegionDeparturesResponse200]:
-    """
+    """Get departures for a given object
+
     Args:
         filter_ (str | Unset):
         from_datetime (str | Unset):
@@ -338,7 +341,8 @@ async def asyncio(
     items_per_schedule: int | Unset = UNSET,
     disable_geojson: bool | Unset = UNSET,
 ) -> GetCoverageRegionDeparturesResponse200 | None:
-    """
+    """Get departures for a given object
+
     Args:
         filter_ (str | Unset):
         from_datetime (str | Unset):

@@ -130,7 +130,8 @@ def sync_detailed(
     filter_: str | Unset = UNSET,
     tags: list[str] | Unset = UNSET,
 ) -> Response[GetCoverageRegionVehicleJourneysResponse200]:
-    """
+    """Get journeys
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
@@ -203,7 +204,8 @@ def sync(
     filter_: str | Unset = UNSET,
     tags: list[str] | Unset = UNSET,
 ) -> GetCoverageRegionVehicleJourneysResponse200 | None:
-    """
+    """Get journeys
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
@@ -271,7 +273,8 @@ async def asyncio_detailed(
     filter_: str | Unset = UNSET,
     tags: list[str] | Unset = UNSET,
 ) -> Response[GetCoverageRegionVehicleJourneysResponse200]:
-    """
+    """Get journeys
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
@@ -342,7 +345,8 @@ async def asyncio(
     filter_: str | Unset = UNSET,
     tags: list[str] | Unset = UNSET,
 ) -> GetCoverageRegionVehicleJourneysResponse200 | None:
-    """
+    """Get journeys
+
     Args:
         start_page (int | Unset):
         count (int | Unset):
