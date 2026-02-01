@@ -13,7 +13,7 @@ from pydantic.errors import PydanticSchemaGenerationError
 import ratp_route_calc.api.default as apis
 from ratp_route_calc.client import AuthenticatedClient
 
-mcp = FastMCP("ratp")
+mcp = FastMCP("ratp", json_response=True)
 
 client = AuthenticatedClient(
     base_url="https://prim.iledefrance-mobilites.fr/marketplace/v2/navitia",
@@ -50,7 +50,7 @@ for submodule in submodules:
     def create_wrapper(original_fn):
         @wraps(original_fn)
         def wrapper(*args, **kwargs):
-            return original_fn(client=client, *args, **kwargs)
+            return original_fn(client=client, *args, **kwargs).to_dict()
 
         sig = inspect.signature(original_fn)
         params = list(sig.parameters.values())[1:]  # Skip first parameter (client)
